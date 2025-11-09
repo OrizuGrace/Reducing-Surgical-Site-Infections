@@ -79,106 +79,104 @@ Our analytical approach followed NHSN standards:
 SIR performance was determined using the existing comparison field, which benchmarks each facility’s performance as better, worse, or same, relative to the national standard.
 This ensured consistency with CDC-defined thresholds.
 * Met Goal Classification:  This classification was built on top of the existing Met Goal column:
-* Facilities with “Yes” were tagged as Goal Met.
-* Facilities with “No” or blanks were grouped as Goal Missed
-* SIR Status was a simple Yes/No flag used to identify whether a facility had a valid SIR value, ensuring that null or suppressed records were properly handled in analysis.
+   * Facilities with “Yes” were tagged as Goal Met.
+   * Facilities with “No” or blanks were grouped as Goal Missed
+   * SIR Status was a simple Yes/No flag used to identify whether a facility had a valid SIR value, ensuring that null or suppressed records were properly handled in analysis.
 
-Range Width was engineered by subtracting the lower 95% CI from the upper 95% CI, producing a measure of statistical spread for each facility’s SIR estimate.
-Stability was derived from Range Width, with facilities above the 75th percentile classified as “Low Stability” — helping to spotlight hospitals with wider uncertainty in their estimates.
-Surgical Safety Index (SSI): To holistically assess how each hospital is performing in terms of surgical infection prevention, we created a Surgical Safety Index. This composite score combines multiple important dimensions: SIR values, performance comparison, and infection burden, to give us a standardised way to identify facilities doing well and those needing urgent attention.
-Why We Created the Surgical Safety Index
+* Range Width was engineered by subtracting the lower 95% CI from the upper 95% CI, producing a measure of statistical spread for each facility’s SIR estimate.
+   * Stability was derived from Range Width, with facilities above the 75th percentile classified as “Low Stability” — helping to spotlight hospitals with wider uncertainty in their estimates.
+* Surgical Safety Index (SSI): To holistically assess how each hospital is performing in terms of surgical infection prevention, we created a Surgical Safety Index. This composite score combines multiple
+* ### important dimensions: SIR values, performance comparison, and infection burden, to give us a standardised way to identify facilities doing well and those needing urgent attention.
+
+## Why We Created the Surgical Safety Index
 Surgical Site Infections (SSIs) are influenced by more than just the Standardised Infection Ratio (SIR). While SIR measures how observed infections compare to predicted infections, it doesn’t capture other elements like how many infections occurred or how a facility is performing relative to others. So we designed the Surgical Safety Index to:
-Capture multiple risk dimensions in a single, easy-to-read score.
-Help stakeholders quickly compare facility safety levels.
-Support decision-making for interventions and resource allocation.
-Dashboard Design Methodology
-User-Centered Design Approach
-The dashboard was designed with three primary stakeholder groups in mind:
-Hospital administrators requiring facility-specific performance metrics
-Policymakers needing statewide trends and geographic insights
-Public health officials focused on intervention targeting and resource allocation
-Dashboard Architecture and Visualization
+* Capture multiple risk dimensions in a single, easy-to-read score.
+* Help stakeholders quickly compare facility safety levels.
+* Support decision-making for interventions and resource allocation.
+* Dashboard Design Methodology
+* User-Centered Design Approach
+  
+### The dashboard was designed with three primary stakeholder groups in mind:
+* Hospital administrators requiring facility-specific performance metrics
+* Policymakers needing statewide trends and geographic insights
+* Public health officials focused on intervention targeting and resource allocation
+  
+### Dashboard Architecture and Visualization
 The dashboard comprises three interconnected pages designed for different analytical perspectives:
-The Facilities Analysis Page: This page revealed the performance of facilities related to surgical site infections (SSIs) across California. It highlights that out of 342 facilities, over 11,000 infections were reported, with an average Standardised Infection Ratio (SIR) of 0.85. Notably, 24.93% of facilities are categorised as unstable, and the Surgical Safety Index stands at 76.04. This page is designed to help users identify high-risk institutions and recognise trends in infection volume by facility type.
 
-Image: Facilities Analysis Dashboard Screenshot (a)
+* The Facilities Analysis Page: This page revealed the performance of facilities related to surgical site infections (SSIs) across California. It highlights that out of 342 facilities, over 11,000 infections were reported, with an average Standardised Infection Ratio (SIR) of 0.85. Notably, 24.93% of facilities are categorised as unstable, and the Surgical Safety Index stands at 76.04. This page is designed to help users identify high-risk institutions and recognise trends in infection volume by facility type.
 
+* The Procedures Analysis Page: This page focuses on evaluating which procedures were safe as well as ones with high infection reporting rates. It was done by examining infection rates and procedure volumes across the hospitals. The analysis highlights colon surgery as the highest-risk procedure and emphasises the significant infection control role of acute care hospitals.
 
-Image: Facilities Analysis Dashboard Screenshot (b)
+* Counties Analysis Page: This page evaluates county-level performance in surgical infection control. The page reveals that most infections are concentrated in coastal and southern California, with Inyo County emerging as a key area for intervention and Los Angeles County as a benchmark for strong performance.
 
-The Procedures Analysis Page: This page focuses on evaluating which procedures were safe as well as ones with high infection reporting rates. It was done by examining infection rates and procedure volumes across the hospitals. The analysis highlights colon surgery as the highest-risk procedure and emphasises the significant infection control role of acute care hospitals.
+### Key Insights and Findings
 
-Image: Procedures Analysis Dashboard Screenshot
-
-Counties Analysis Page: This page evaluates county-level performance in surgical infection control. The page reveals that most infections are concentrated in coastal and southern California, with Inyo County emerging as a key area for intervention and Los Angeles County as a benchmark for strong performance.
-
-Image: Counties Analysis Dashboard Screenshot
-
-Key Insights and Findings
-Overall Performance Landscape
+### Overall Performance Landscape
 The analysis reveals a healthcare system with significant performance disparities:
-An average SIR of 0.85 indicates generally effective infection control, but with substantial variation
-A goal achievement rate of 31.81% suggests widespread challenges in meeting national standards
-24.93% unstable facilities indicates systemic issues requiring targeted intervention
-Our overall average Surgical Safety Index was 74.06, which suggests that while many facilities are on track, there's still room for improvement, especially in reducing raw infection counts and improving stability.
-Facility Type Performance Patterns
+* An average SIR of 0.85 indicates generally effective infection control, but with substantial variation
+* A goal achievement rate of 31.81% suggests widespread challenges in meeting national standards
+* 24.93% unstable facilities indicates systemic issues requiring targeted intervention
+* #### Our overall average Surgical Safety Index was 74.06, which suggests that while many facilities are on track, there's still room for improvement, especially in reducing raw infection counts and improving stability.
+
+### Facility Type Performance Patterns
 The analysis uncovered distinct performance patterns using NHSN facility categorisation:
-Major Teaching hospitals report the highest infection burden (7.3K infections) but handle complex cases requiring specialized risk adjustment
-Community hospitals show variation by bed size: >250 beds (3.6K infections), 125-250 beds, and <125 beds demonstrate different risk profiles
-Critical Access hospitals demonstrate better relative performance when adjusted for their rural location and limited resources (≤25 beds, >35 miles from other hospitals)
-Pediatric hospitals show distinct infection patterns requiring age-specific intervention approaches
-Procedure-Specific Risk Profiles
+* Major Teaching hospitals report the highest infection burden (7.3K infections) but handle complex cases requiring specialized risk adjustment
+* Community hospitals show variation by bed size: >250 beds (3.6K infections), 125-250 beds, and <125 beds demonstrate different risk profiles
+* Critical Access hospitals demonstrate better relative performance when adjusted for their rural location and limited resources (≤25 beds, >35 miles from other hospitals)
+* Pediatric hospitals show distinct infection patterns requiring age-specific intervention approaches
+
+### Procedure-Specific Risk Profiles
 The dashboard identifies clear procedure-specific risk patterns among the 28 NHSN-defined categories:
-Colon surgery leads in reported infections (2,090 cases), indicating need for enhanced protocols in this high-risk category
-Cesarean sections remain the highest-volume procedure (341K) with relatively better infection control outcomes
-Small bowel surgery and spinal fusion show elevated infection rates requiring specialized attention
-Cardiac surgery procedures (including coronary bypass) demonstrate varying risk profiles based on complexity
-Orthopedic procedures (hip prosthesis, knee prosthesis) show different infection patterns requiring joint-specific protocols
-Geographic Disparities
+* Colon surgery leads in reported infections (2,090 cases), indicating need for enhanced protocols in this high-risk category
+* Cesarean sections remain the highest-volume procedure (341K) with relatively better infection control outcomes
+* Small bowel surgery and spinal fusion show elevated infection rates requiring specialized attention
+* Cardiac surgery procedures (including coronary bypass) demonstrate varying risk profiles based on complexity
+* Orthopedic procedures (hip prosthesis, knee prosthesis) show different infection patterns requiring joint-specific protocols
+
+### Geographic Disparities
 County-level analysis reveals significant geographic variations:
-Inyo County shows the highest average SIR (9.0), indicating severe performance challenges
-Los Angeles County demonstrates strong goal achievement (1,570 facilities meeting targets)
-Coastal and southern counties show concentration of high-infection facilities, suggesting regional factors
-High-Risk Facility Identification
+* Inyo County shows the highest average SIR (9.0), indicating severe performance challenges
+* Los Angeles County demonstrates strong goal achievement (1,570 facilities meeting targets)
+* Coastal and southern counties show concentration of high-infection facilities, suggesting regional factors
+
+### High-Risk Facility Identification
 The dashboard identifies specific facilities requiring immediate attention:
-Scripps Memorial Hospital, La Jolla (SIR: 1.62)
-Highland Hospital (SIR: 1.48)
-LAC Harbor UCLA Medical Center (SIR: 1.35)
+* Scripps Memorial Hospital, La Jolla (SIR: 1.62)
+* Highland Hospital (SIR: 1.48)
+* LAC Harbor UCLA Medical Center (SIR: 1.35)
 These facilities represent critical intervention opportunities with clear performance gaps.
-Policy Recommendations
+
+### Policy Recommendations
 Based on the findings of the analysis and the CDC guidelines for preventing SSIs, we propose the following recommendations under short-, medium-, and long-term strategies:
-Short-Term Actions (0–6 Months)
-High-Risk Facility Rapid Response Program
-CDC Alignment: Tailored interventions based on infection rates and facility risk
+* #### Short-Term Actions (0–6 Months)
+  * High-Risk Facility Rapid Response Program
+       * HDC Alignment: Tailored interventions based on infection rates and facility risk
 Deploy infection control teams to the top 10 high-risk facilities, like Scripps Memorial, Highland Hospital, and LAC Harbour UCLA, to audit CDC practices (timely antibiotics, proper hair removal, normothermia) and provide weekly dashboards and tailored action plans for colon and small bowel surgeries based on infection rates.
-Academic Medical Center (AMC) Infection Prevention Support
-CDC Alignment: Adjusted expectations based on patient complexity and volume
+  * Academic Medical Center (AMC) Infection Prevention Support
+       * CDC Alignment: Adjusted expectations based on patient complexity and volume
 Support academic medical centres by implementing risk-adjusted benchmarking for surgical complexity and funding infection control fellowships with SSI reduction training and launching a peer mentorship programme between low- and high-SIR teaching hospitals.
 
-
-
-
-
-Medium-Term Strategies (6–18 Months)
-Procedure-Specific Standardization 
-(CDC Bundle Implementation)
+* #### Medium-Term Strategies (6–18 Months)
+  * Procedure-Specific Standardization 
+       * (CDC Bundle Implementation)
 Implement mandatory SSI prevention bundles for high-risk procedures, including pre-op CHG showers, oral antibiotics with bowel prep, and normothermia tracking for colon surgery; extended post-op monitoring and sterile field maintenance for spinal fusion; and broadened antibiotic protocols with enhanced wound care training for small bowel surgery.
-Regional Disparity Reduction Strategy
-CDC Alignment: Equity-based support and collaborative learning
+  * Regional Disparity Reduction Strategy
+       * CDC Alignment: Equity-based support and collaborative learning
 Deploy a mobile infection control task force to rural counties like Inyo with high SIR, establish regional collaboratives like the Coastal CA SSI Alliance, and create virtual consultation hubs connecting urban specialists to rural and critical access hospitals.
- Surveillance and Reporting Upgrade Plan
-CDC Alignment: Surveillance integrity is key to prevention
+  * Surveillance and Reporting Upgrade Plan
+        * CDC Alignment: Surveillance integrity is key to prevention
 Mandate NHSN-compliant SIR reporting for all California acute care hospitals and incentivise real-time data systems linked to facility dashboards, while auditing to address 8.48% data gaps.
-Long-Term Plan (18+ Months)
-6. Performance-Linked Payment Reform
-CDC Alignment: Financial accountability tied to infection outcomes
+
+* #### Long-Term Plan (18+ Months)
+  * Performance-Linked Payment Reform
+        * CDC Alignment: Financial accountability tied to infection outcomes
 Implement SSI rate-based reimbursement modifiers using CDC infection ratio thresholds, and incentivise bundle adherence, ensuring rewards go to high-quality, not high-volume care. Also, award top-performing hospitals annually for infection reduction.
-
-
-7. California Statewide SSI Innovation Network (CSSIN)
-CDC Alignment: Cross-institutional collaboration and learning
+  * California Statewide SSI Innovation Network (CSSIN)
+        * CDC Alignment: Cross-institutional collaboration and learning
 Launch a quarterly public SSI scorecard showing hospital SIR trends, fund research grants to study California-specific SSI factors, and create an innovation hub sharing effective tools and protocols.
-Conclusion
+
+### Conclusion
 The analysis highlights critical challenges and actionable opportunities in reducing surgical site infections (SSIs) across California. With a statewide SIR of 0.85, 24.93% of facilities were considered unstable, and only 31.81% of facilities currently meet SIR goals. However, identifying high-risk facilities, procedures, and regions enables targeted interventions and room for improvement through systemic and strategic efforts. Policy recommendations focus on immediate interventions to long-term system reforms, supported by a dynamic dashboard for real-time monitoring. Ultimately, this approach offers a path to safer surgeries and better patient outcomes through data-driven decision-making and sustained collaboration.
 
 
