@@ -165,15 +165,15 @@ Implement mandatory SSI prevention bundles for high-risk procedures, including p
        * CDC Alignment: Equity-based support and collaborative learning
 Deploy a mobile infection control task force to rural counties like Inyo with high SIR, establish regional collaboratives like the Coastal CA SSI Alliance, and create virtual consultation hubs connecting urban specialists to rural and critical access hospitals.
   * Surveillance and Reporting Upgrade Plan
-        * CDC Alignment: Surveillance integrity is key to prevention
+       * CDC Alignment: Surveillance integrity is key to prevention
 Mandate NHSN-compliant SIR reporting for all California acute care hospitals and incentivise real-time data systems linked to facility dashboards, while auditing to address 8.48% data gaps.
 
 * #### Long-Term Plan (18+ Months)
   * Performance-Linked Payment Reform
-        * CDC Alignment: Financial accountability tied to infection outcomes
+       * CDC Alignment: Financial accountability tied to infection outcomes
 Implement SSI rate-based reimbursement modifiers using CDC infection ratio thresholds, and incentivise bundle adherence, ensuring rewards go to high-quality, not high-volume care. Also, award top-performing hospitals annually for infection reduction.
   * California Statewide SSI Innovation Network (CSSIN)
-        * CDC Alignment: Cross-institutional collaboration and learning
+       * CDC Alignment: Cross-institutional collaboration and learning
 Launch a quarterly public SSI scorecard showing hospital SIR trends, fund research grants to study California-specific SSI factors, and create an innovation hub sharing effective tools and protocols.
 
 ### Conclusion
