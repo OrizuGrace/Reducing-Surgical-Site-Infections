@@ -66,12 +66,12 @@ Data Standardization
 * Removed duplicate: Duplicates were removed to avoid redundancies across years
 * Trimmed whitespace: key text fields (e.g., Facility Name) were trimmed to standardize entries
 * Facility Type Standardisation: To simplify and group similar facility types for easier analysis and visualisation, we standardised the Facility_Type classifications as follows:
-* Community, <125 Beds → Small Facility
-* Community, 125–250 Beds → Medium Facility
-* Community, >250 Beds → Large Facility
-* Major Teaching → Teaching Hospital
-* Pediatric → Pediatric Facility
-* Critical Access → Critical Access
+  * Community, <125 Beds → Small Facility
+  * Community, 125–250 Beds → Medium Facility
+  * Community, >250 Beds → Large Facility
+  * Major Teaching → Teaching Hospital
+  * Pediatric → Pediatric Facility
+  * Critical Access → Critical Access
   
 ### Performance Benchmarking
 Our analytical approach followed NHSN standards:
